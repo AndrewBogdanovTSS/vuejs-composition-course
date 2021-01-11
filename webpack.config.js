@@ -4,6 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
   entry: './src/main.ts',
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/'
@@ -23,24 +24,18 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-        ]
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.txt$/i,
-        use: 'raw-loader',
+        use: 'raw-loader'
       }
     ]
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
+    extensions: ['.tsx', '.ts', '.js']
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new VueLoaderPlugin()
-  ],
+  plugins: [new CleanWebpackPlugin(), new VueLoaderPlugin()],
   devServer: {
     overlay: true,
     historyApiFallback: true
