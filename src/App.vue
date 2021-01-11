@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Timeline from './Timeline.vue'
+import Timeline from './components/Timeline.vue'
 
 export default defineComponent({
   name: 'App',
