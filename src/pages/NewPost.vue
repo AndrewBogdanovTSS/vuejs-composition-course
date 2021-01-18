@@ -3,11 +3,7 @@
 </template>
 
 <script>
-export default {
-name: 'New Post'
-}
+  export default {
+    name: 'New Post'
+  }
 </script>
-
-<style scoped>
-
-</style>
