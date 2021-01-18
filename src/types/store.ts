@@ -1,7 +1,11 @@
 import {IPost} from './index'
 
-export interface IState {}
+/*export interface IPostsState {
+  ids: string[]
+  all: Record<string, IPost>
+  loaded: boolean
+}*/
 
-export interface IPostsState {
+export interface IState {
   posts: IPost[]
 }

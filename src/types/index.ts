@@ -3,10 +3,10 @@ import {Moment} from 'moment'
 export type TPeriod = 'today' | 'this week' | 'this month'
 
 export interface IPost {
-  id: number
+  id: string
   title: string
   markdown: string
   html: string
-  authorId: number
+  authorId: string
   created: Moment
 }

@@ -6,7 +6,18 @@
   "scripts": {
     "test": "yarn jest",
     "dev": "yarn webpack-dev-server",
-    "build": "yarn webpack --mode production"
+    "build": "yarn webpack --mode production",
+    "server": "json-server --watch db.js --delay 1000"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "highlight.js": "^10.5.0",
+    "lodash": "^4.17.20",
+    "marked": "^1.2.7",
+    "moment": "^2.29.1",
+    "prettier": "^2.2.1",
+    "vue": "^3.0.2",
+    "vue-router": "^4.0.0-alpha.13"
   },
   "devDependencies": {
     "@babel/node": "^7.12.10",
@@ -24,6 +35,8 @@
     "flush-promises": "^1.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "json-server": "^0.16.3",
     "raw-loader": "^4.0.2",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.4.4",
@@ -34,15 +47,5 @@
     "webpack": "^5.12.2",
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^4.0.0-beta.0"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "highlight.js": "^10.5.0",
-    "lodash": "^4.17.20",
-    "marked": "^1.2.7",
-    "moment": "^2.29.1",
-    "vue": "^3.0.2",
-    "vue-router": "^4.0.0-alpha.13",
-    "prettier": "^2.2.1"
   }
 }
